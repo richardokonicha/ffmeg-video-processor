@@ -1,0 +1,5 @@
+click==8.1.7
+ffmpeg==1.4
+ffmpeg-python==0.2.0
+ffprobe-python==1.0.3
+future==0.18.3
