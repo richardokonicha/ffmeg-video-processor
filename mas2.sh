@@ -5,10 +5,16 @@ if [ "$#" -eq 0 ]; then
     exit 1
 fi
 
+# title=$1
+# audio_dir=~/workspace/ihsan/books/$title/audio
+# images_dir=~/workspace/ihsan/books/$title/images
+# base_dir=~/workspace/ihsan/books/$title
+
 title=$1
-audio_dir=~/workspace/ihsan/books/$title/audio
-images_dir=~/workspace/ihsan/books/$title/images
-base_dir=~/workspace/ihsan/books/$title
+current_dir=$(pwd)
+audio_dir="$current_dir/$title/audio"
+images_dir="$current_dir/$title/images"
+base_dir="$current_dir/$title"
 
 # Desired width and height for the final video
 width=1280
