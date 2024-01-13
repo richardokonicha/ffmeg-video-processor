@@ -66,12 +66,11 @@ def create_subtitle(i, subs, duration, caption_line):
     subtitle.text = caption_line.strip()
     subs.append(subtitle)
 
-def main():
+def main(title = "brave"):
     try:
         clear_temps()
         check_dependencies()
 
-        title = "brave"
         base_dir = Path.cwd() / title
 
         videos_dir = base_dir / "videos"
@@ -139,4 +138,5 @@ def main():
         print(f"An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
-    main()
+    title = "brave"
+    main(title)
